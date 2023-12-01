@@ -24,8 +24,15 @@
             <input type="text" name="titulo" class="form-control" value="{{ $pelicula->titulo }}" required>
         </div>
         <div class="form-group">
-            <label for="genero">Genero:</label>
-            <textarea name="genero" class="form-control" required>{{ $pelicula->descripcion }}</textarea>
+            <label for="genero">Género:</label>
+            <select name="genero" class="form-control" required>
+                <option value="Terror" {{ $pelicula->genero === 'Terror' ? 'selected' : '' }}>Terror</option>
+                <option value="Drama" {{ $pelicula->genero === 'Drama' ? 'selected' : '' }}>Drama</option>
+                <option value="Acción" {{ $pelicula->genero === 'Acción' ? 'selected' : '' }}>Acción</option>
+                <option value="Comedia" {{ $pelicula->genero === 'Comedia' ? 'selected' : '' }}>Comedia</option>
+                <option value="Ciencia Ficción" {{ $pelicula->genero === 'Ciencia Ficción' ? 'selected' : '' }}>Ciencia Ficción</option>
+                <option value="Animación" {{ $pelicula->genero === 'Animación' ? 'selected' : '' }}>Animación</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="anio">Año:</label>

@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('peliculas', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->string('genero');
+            //$table->string('genero');
+            $table->enum('genero', ['Terror', 'Drama', 'Acción', 'Comedia', 'Ciencia Ficción', 'Animación']);
             $table->integer('anio');
             $table->timestamps();
         });

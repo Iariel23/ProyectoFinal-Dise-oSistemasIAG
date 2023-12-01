@@ -19,7 +19,7 @@
             <tr>
                 <th>ID</th>
                 <th>Título</th>
-                <th>Genero</th>
+                <th>Género</th>
                 <th>Año</th>
                 <th>Acciones</th>
             </tr>

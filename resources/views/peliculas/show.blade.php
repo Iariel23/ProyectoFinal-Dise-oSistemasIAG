@@ -10,7 +10,7 @@
         <strong>Título:</strong> {{ $pelicula->titulo }}
     </div>
     <div>
-        <strong>Genero:</strong> {{ $pelicula->genero }}
+        <strong>Género:</strong> {{ $pelicula->genero }}
     </div>
     <div>
         <strong>Año:</strong> {{ $pelicula->anio }}

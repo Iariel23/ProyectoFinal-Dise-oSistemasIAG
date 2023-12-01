@@ -40,7 +40,8 @@ class PeliculaController extends Controller
     public function edit($id)
     {
         $pelicula = Pelicula::findOrFail($id);
-        return view('peliculas.edit', compact('pelicula'));
+        $generos = ['Terror', 'Drama', 'Acción', 'Comedia', 'Ciencia Ficción', 'Animación'];
+        return view('peliculas.edit', compact('pelicula', 'generos'));
     }
 
     public function update(Request $request, $id)

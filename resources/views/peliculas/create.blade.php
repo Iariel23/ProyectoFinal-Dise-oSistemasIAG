@@ -23,8 +23,15 @@
             <input type="text" name="titulo" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="genero">Genero:</label>
-            <textarea name="genero" class="form-control" required></textarea>
+            <label for="genero">Género:</label>
+            <select name="genero" class="form-control" required>
+                <option value="Terror">Terror</option>
+                <option value="Drama">Drama</option>
+                <option value="Acción">Acción</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Ciencia Ficción">Ciencia Ficción</option>
+                <option value="Animación">Animación</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="anio">Año:</label>
